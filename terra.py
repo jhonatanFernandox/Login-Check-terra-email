@@ -35,9 +35,7 @@ def Login_web(dados):
     except:
         print("erros")
 
-def trataerro():
-    Login_web(dados)       
-
+   
 for linha in lista:
     dados = linha.split('|')
     Login_web(dados)
