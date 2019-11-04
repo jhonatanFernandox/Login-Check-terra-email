@@ -22,7 +22,7 @@ def Login_web(dados):
         Navegador.find_element_by_name("username").send_keys(dados[0])
         Navegador.find_element_by_name("password").send_keys(dados[1])
         Navegador.find_element_by_xpath("/html/body/div[2]/div[1]/div[4]/div[2]/div[1]/div[1]/div/form/fieldset/div[3]/button/span").click()
-        time.sleep(3)
+        time.sleep(1)
         if url == Navegador.current_url: 
             print("[-] Login Negado ----> " + dados[0] + "|" + dados[1] + " [-]")
         else:
